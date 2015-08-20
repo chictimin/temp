@@ -1,0 +1,1280 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  width: auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0;
+  }
+  body .markdown-body {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>VOG</title></head><body><article class="markdown-body"><h1 id="vog-vault-of-glass"><a name="user-content-vog-vault-of-glass" href="#vog-vault-of-glass" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>VOG - Vault of Glass</h1>
+<div class="toc">
+<ul>
+<li><a href="#vog-vault-of-glass">VOG - Vault of Glass</a><ul>
+<li><a href="#area-1-open-the-vault-of-glass">Area 1 : Open the Vault of Glass</a><ul>
+<li><a href="#overview">Overview</a></li>
+</ul>
+</li>
+<li><a href="#area-2-boss-templar">Area 2 : Boss - Templar</a><ul>
+<li><a href="#phase-1-conflux">Phase 1: Conflux 방어</a><ul>
+<li><a href="#overview_1">Overview</a></li>
+</ul>
+</li>
+<li><a href="#phase-2-oracles">Phase 2: Oracles 파괴</a><ul>
+<li><a href="#overview_2">Overview</a><ul>
+<li><a href="#trick-route62">&lt;Trick Route></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#phase-3-templar">Phase 3: Templar 전투</a><ul>
+<li><a href="#overview_3">Overview</a><ul>
+<li><a href="#standard-route62">&lt;Standard Route></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#area-3-the-gorgons-labyrinth">Area 3 : The Gorgon’s Labyrinth</a><ul>
+<li><a href="#overview_4">Overview</a></li>
+</ul>
+</li>
+<li><a href="#area-4-boss-atheon">Area 4 : Boss - Atheon</a><ul>
+<li><a href="#phase-1-gatekeeper-relic-conflux">Phase 1: GateKeeper 처치 / Relic 입수 후 Conflux 방어</a><ul>
+<li><a href="#overview_5">Overview</a><ul>
+<li><a href="#standard-route62_1">&lt;Standard Route></a></li>
+<li><a href="#expert-route62">&lt;Expert Route></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#phase-2-atheon">Phase 2: Atheon 처치</a><ul>
+<li><a href="#overview_6">Overview</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="area-1-open-the-vault-of-glass"><a name="user-content-area-1-open-the-vault-of-glass" href="#area-1-open-the-vault-of-glass" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Area 1 : Open the Vault of Glass</h2>
+<ul>
+<li><code>Objective(s)</code><ul>
+<li>Sync Plates를 점령 &amp; Praetorian(=미노)이 들어오지 못하게 방어하여 워프 소환</li>
+</ul>
+</li>
+<li><code>Enemies</code><ul>
+<li>고블린 Goblin</li>
+<li>하피 Harpy</li>
+<li>미노 Minotaur or Praetorian(= Major Minotaur)</li>
+</ul>
+</li>
+<li><code>Guardian Grouping</code><ul>
+<li>2 - 2 - 2</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Top View" src="http://i.imgur.com/UBtc0z0.jpg" /></p>
+<h4 id="overview"><a name="user-content-overview" href="#overview" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Overview</h4>
+<ol>
+<li>상대적으로 중앙(G1 &amp; G2)팀이 방어하기 쉽기 때문에 중앙에 한 명만 배치되어도 무관</li>
+<li>미노의 출연 여부를 커뮤니케이션을 통해 파악하는 편이 유리</li>
+<li>미노 외의 적들은 Sync Plates에 진입하여도 점령하지 않음</li>
+<li>Sync Plates 구역(총 3개 구역) 중 1개 구역만 점령된 상태면 워프 생성 프로그레스가 초기화 됨</li>
+<li>Area 1 클리어후 Area 2로 가는 길에 상자 위치</li>
+</ol>
+<h2 id="area-2-boss-templar"><a name="user-content-area-2-boss-templar" href="#area-2-boss-templar" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Area 2 : Boss - Templar</h2>
+<ul>
+<li><code>Objective(s)</code><ul>
+<li>confluxes 방어</li>
+<li>Oracles 파괴</li>
+<li>8분안에 Templar 죽이기</li>
+</ul>
+</li>
+<li><code>Enemies</code><ul>
+<li>파나틱 Fanatic Goblin : &lsquo;Mark Of Negation&rsquo; 디버프 시전</li>
+<li>하피 Harpy</li>
+<li>미노 Minotaur</li>
+</ul>
+</li>
+<li><code>Guardian Grouping</code><ul>
+<li>Standard Route<ul>
+<li>Phase 1 &amp; Phase 2 : 2 - 2 - 2</li>
+<li>Phase 3 : 2 - 1 - 3</li>
+</ul>
+</li>
+<li>Trick Route<ul>
+<li>Phase 1 : 2 - 2 - 2</li>
+<li>Phase 2 &amp; Phase 3 : 1 - 5</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="phase-1-conflux"><a name="user-content-phase-1-conflux" href="#phase-1-conflux" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Phase 1: Conflux 방어</h3>
+<h4 id="overview_1"><a name="user-content-overview_1" href="#overview_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Overview</h4>
+<p><img alt="Top View" src="http://i.imgur.com/NUjV3Wl.jpg" /></p>
+<ol>
+<li><strong>타워(Conflux)</strong>를 보호하는 것이 주 목적이며 그림처럼 가디언을 나누어 배치</li>
+<li>각각의 가디언들은 위치를 유지하되 각 위치에서 지원을 요청할 시 도와주는 방식으로 진행</li>
+<li>요주의 적 : <em>Fanatic Goblin</em>(이하 파나틱)<ul>
+<li>파나틱이 만들어내는 초록색 구역에 닿는 경우 Mark Of Negation 디버프 발생</li>
+<li>디버프 발생 시 그림의 초록색 Cleanse 영역(일명 우물)에서 정화</li>
+<li>Phase 후반부엔 우물이 사라지므로 유의</li>
+</ul>
+</li>
+</ol>
+<h3 id="phase-2-oracles"><a name="user-content-phase-2-oracles" href="#phase-2-oracles" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Phase 2: Oracles 파괴</h3>
+<h4 id="overview_2"><a name="user-content-overview_2" href="#overview_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Overview</h4>
+<p><img alt="Top View" src="http://i.imgur.com/exPT3pD.jpg" /></p>
+<ol>
+<li>위 그림의 노란색 마크가 Oracle이 생성되는 위치</li>
+<li>Oracle이 생성될 때 &lsquo;도레미파솔라시도&rsquo; 음계의 사운드가 들리는데 이를 통해 위치를 예측할 수 있으며 <strong>Oracle이 생성된다면 생성되는 즉시 파괴</strong>하여야 함</li>
+<li>Oracle 위치에 대한 지속적이고 빠른 공유가 필요</li>
+<li>원거리에서 저격하는 적들에 유의하며 진행</li>
+</ol>
+<h5 id="trick-route62"><a name="user-content-trick-route62" href="#trick-route62" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>&lt;Trick Route></h5>
+<ol>
+<li>Oracle 파괴가 주 목적이므로 적들은 잡지 않는 방향으로 진행 가능</li>
+<li>1 - 5로 그룹을 나누어 1은 Oracle이 스폰되는 구역으로, 나머지 5는 플레이어 리스폰 지역에 잔류</li>
+<li><img alt="Oracle 11시 자리" src="http://i1.ruliweb.daumcdn.net/uf/image/U01/ruliweb/54485DC750114E0024" /><br />
+<img alt="Oracle 파괴에 유용한 자리" src="http://i1.ruliweb.daumcdn.net/uf/image/U01/ruliweb/544860B04F2A8E0010" /><br />
+Oracle 스폰 구역으로 건너온 1이 위 스크린샷의 위치로 이동하여 붉은색으로 마크된 영역에 스폰되는 Oracle을 담당, 그 외의 가디언들은 나머지 Oracle을 상대</li>
+</ol>
+<h3 id="phase-3-templar"><a name="user-content-phase-3-templar" href="#phase-3-templar" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Phase 3: Templar 전투</h3>
+<h4 id="overview_3"><a name="user-content-overview_3" href="#overview_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Overview</h4>
+<p><img alt="Top View" src="http://i.imgur.com/p0zexpV.jpg" /></p>
+<ol>
+<li>Phase 3에서는 Relic(이하 방패)가 등장하며 유물을 습득하는 즉시 Phase 3가 시작</li>
+<li>방패를 든 가디언은 하피 처리를 하면서 <strong>수퍼차지 게이지를 채우고 게이지가 가득 차면 보스의 실드에 수퍼차지 공격</strong>을 날려 실드를 파괴</li>
+<li>보스의 실드가 파괴되면 플레이어들에게 랜덤으로 이동 및 공격을 묶어버리는 <strong>디버프 실드가 전개</strong>되며 실드를 빠르게 부순 후 실드가 없는 보스를 딜</li>
+<li><img alt="Top View" src="http://i.imgur.com/Q6SZE3t.jpg" /><br />
+보스가 텔레포트를 시전하는 경우 위와 같은 마크가 맵에 표시<ul>
+<li>해당 장소에 가디언이 위치 혹은 와드가 전개되면 보스의 텔레포트는 실패하며 무방비 상태가 유지됨</li>
+</ul>
+</li>
+</ol>
+<h5 id="standard-route62"><a name="user-content-standard-route62" href="#standard-route62" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>&lt;Standard Route></h5>
+<ol>
+<li>방패를 든 가디언이 디버프 실드를 파괴하는 경우 체력이 소모되므로 그 외 다른 가디언이 파괴하는 것이 유용</li>
+<li>방패를 든 가디언이 사망한 경우 그 즉시 다른 가디언이 방패를 습득해야 함<ul>
+<li>방패가 방치되는 경우 즉사 저주인 &lsquo;The Curse of Aegis&rsquo;가 전개됨</li>
+</ul>
+</li>
+</ol>
+<h2 id="area-3-the-gorgons-labyrinth"><a name="user-content-area-3-the-gorgons-labyrinth" href="#area-3-the-gorgons-labyrinth" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Area 3 : The Gorgon’s Labyrinth</h2>
+<ul>
+<li><code>Objective(s)</code><ul>
+<li>Gorgon에게 발각되지 않고 해당 지역 통과</li>
+</ul>
+</li>
+<li><code>Enemies</code><ul>
+<li>Gorgons</li>
+</ul>
+</li>
+</ul>
+<h4 id="overview_4"><a name="user-content-overview_4" href="#overview_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Overview</h4>
+<ol>
+<li>Area 2에서 Area 3로 가는 숨겨진 길에 2개의 상자가 위치<ul>
+<li>리스폰 장소에서 왼쪽 절벽 위 구멍</li>
+<li>리스폰 장소에서 오른쪽 직진해서 나오는 구역</li>
+</ul>
+</li>
+<li>Gorgon(이하 고르곤)들에게 <strong>발각되는 즉시 즉사 저주가 발동</strong>되어 전멸되므로 발견되지 않도록 유의<ul>
+<li>고르곤을 처치하는 경우 그리모어 카드 획득 가능</li>
+</ul>
+</li>
+<li>고르곤 영역을 통과한 이후 점핑 컨트롤 구간에 대한 설명은 <a href="https://www.youtube.com/watch?v=ZAgX_W3ID2Q">Youtube 링크</a>를 참조</li>
+</ol>
+<h2 id="area-4-boss-atheon"><a name="user-content-area-4-boss-atheon" href="#area-4-boss-atheon" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Area 4 : Boss - Atheon</h2>
+<ul>
+<li><code>Objective(s)</code><ul>
+<li>Gatekeeper 처치</li>
+<li>timegates에서 Relic을 입수 후 Conflux 방어</li>
+<li>Atheon 처치</li>
+</ul>
+</li>
+<li><code>Enemies</code><ul>
+<li>Gatekeeper</li>
+<li>Goblin</li>
+<li>Harpy</li>
+<li>Praetorian</li>
+<li>Oracle</li>
+</ul>
+</li>
+<li><code>Guardian Grouping</code><ul>
+<li>Phase 1 : 3 - 3 or 3 - 2 - 1 or 6</li>
+<li>Phase 2 : 3 - 3</li>
+</ul>
+</li>
+</ul>
+<h3 id="phase-1-gatekeeper-relic-conflux"><a name="user-content-phase-1-gatekeeper-relic-conflux" href="#phase-1-gatekeeper-relic-conflux" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Phase 1: GateKeeper 처치 / Relic 입수 후 Conflux 방어</h3>
+<h4 id="overview_5"><a name="user-content-overview_5" href="#overview_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Overview</h4>
+<p><img alt="Top View" src="http://i.imgur.com/HEH3EO4.jpg" /></p>
+<ol>
+<li>첫 진입시 왼쪽, 오른 쪽에 Sync Plate와 상단 중앙의 GateKeeper(이하 게이트키퍼)가 위치했으며 잡다한 적들을 처리해주며 게이트키퍼를 처치하면 Sync Plate 점거 가능</li>
+<li>Sync Plate를 점거하게 되면 포탈이 전개</li>
+</ol>
+<h5 id="standard-route62_1"><a name="user-content-standard-route62_1" href="#standard-route62_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>&lt;Standard Route></h5>
+<ol>
+<li>3명의 가디언이 그룹을 이뤄 Gate 1에 진입, 나머지 3명의 가디언은 Gate 1의 Sync Plate를 방어, Area 1과 동일하게 미노가 진입하지 못하게 유의</li>
+<li>게이트 진입 그룹은 잡다한 적들을 처리하면서 게이트키퍼를 잡아 방패를 입수</li>
+<li>방패 입수 후 일정 쿨타임이 지나야 Cleansing이 가능해지므로 방패 입수 후 바로 원래 지역으로 되돌아와 게이트 진입 그룹들에게 Cleansing을 시전</li>
+<li>방패 입수 이후부터 지역 가운데에 Conflux가 생성되며 이 Conflux를 방어해야 함</li>
+<li>Conflux 방어 그룹이 비교적 어렵기 때문에 기존 게이트 진입 그룹 중 (방패를 든 가디언을 제외한) 한 명이 방어 그룹으로 넘어와 진행</li>
+<li>게이트 진입 그룹은 Gate 2로 진입하고 방패 가디언은 지속적으로 게이트 진입 그룹에게 Cleansing을 시전하여 생존을 유지</li>
+<li>나머지 방어 그룹은 2 - 2로 Gate2의 Sync Plate를 방어하는 그룹과 Conflux를 방어하는 그룹으로 분산시켜 방어</li>
+<li>Gate 2에서 진입 그룹이 돌아오면 Conflux 방어에 집중</li>
+</ol>
+<h5 id="expert-route62"><a name="user-content-expert-route62" href="#expert-route62" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>&lt;Expert Route></h5>
+<ol>
+<li>Gate 1, Gate 2를 동시에 들어가 게이트키퍼를 비슷한 시기에 처리</li>
+<li>방패 입수 후 바로 포탈에서 복귀</li>
+<li>Gate 진입 시기에 약간의 딜레이를 주는 것이 타이밍 맞추는데 유리</li>
+</ol>
+<h3 id="phase-2-atheon"><a name="user-content-phase-2-atheon" href="#phase-2-atheon" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Phase 2: Atheon 처치</h3>
+<h4 id="overview_6"><a name="user-content-overview_6" href="#overview_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Overview</h4>
+<p><img alt="Top View" src="http://i.imgur.com/vARgefr.jpg" />  </p>
+<ol>
+<li>Phase 2에서는 가디언 중 랜덤으로 일정 지역에 워프시키므로 강제로 워프당한 워프 그룹은 자신이 워프한 지역(사막 혹은 초원)을 파악하고 워프하지 않은 방어 그룹에게 즉각 전달해야 함</li>
+<li>강제 워프가 진행되면 잔류한 방어 그룹 중 랜덤으로 디버프 실드가 전개되므로 디버프 실드에 유의</li>
+<li>워프 그룹 중 한 명은 반드시 방패를 잡고 나머지 팀원들은 방패 가디언을 서포트하며 적 및 총 7개의 Oracle을 파괴해야 함<ul>
+<li>방패는 비교적 높은 레벨의 가디언 or 워록(선싱어) or 타이탄이 잡는 것이 유리</li>
+<li>방패 가디언은 워프 그룹에게 가해지는 저주를 가 오래 지속되지 않도록 Cleansing에 유의하며 적들을 처리</li>
+<li>Oracle 파괴 시기 혹은 적 처리가 늦어지는 경우 반드시 방어 그룹에게 알려 지원받도록 함</li>
+<li>헌터(건슬링어)의 골든건을 통해 비교적 쉽게 Oracle 제거가 가능</li>
+</ul>
+</li>
+<li>방어 그룹은 워프 그룹이 전달한 지역에 맞게 이동하여 해당 지역의 게이트를 전개할 수 있도록 하며, 비교적 Sync Plate의 기둥 위가 안전함<ul>
+<li>좌측 포탈 : 사막</li>
+<li>우측 포탈 : 초원</li>
+</ul>
+</li>
+<li>워프 그룹이 Oracle을 전부 파괴한 경우 방어 그룹에게 상황을 전달, 방어 그룹 역시 현재 상황을 전달하여 복귀 여부를 체크한 후 기존 구역으로 복귀하며 복귀 후 방패 가디언은 워프 그룹에 속했던 가디언들을 반드시 Cleansing 시켜야 함</li>
+<li>Oracle 파괴 직후부터 약 30초 가량의 &lsquo;Time&rsquo;s Vengeance&rsquo;버프가 가디언들에게 발생, 버프 시간 동안 보스를 극딜<ul>
+<li>Time&rsquo;s Vengeance는 수퍼차지 / 수류탄 / 스킬 쿨타임이 감소하며 보스에게 가해지는 데미지가 대폭 상승</li>
+<li>버프 시간 동안 수퍼차지를 통해 하피 등의 적들을 정리하는 것도 유용</li>
+</ul>
+</li>
+<li>Time&rsquo;s Vengeance 버프 종료 후 처음부터 다시 지금까지의 진행과정이 반복된다.</li>
+</ol></article></body></html>
